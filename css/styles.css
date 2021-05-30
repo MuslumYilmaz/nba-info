@@ -33,7 +33,6 @@ section {
 }
 
 #home {
-    background-color: royalblue;
     overflow: hidden;
 }
 
@@ -114,7 +113,7 @@ section {
 }
 
 #lakers-image {
-    background-image: url("./kobe.png");
+    background-image: url("../images/kobe.png");
 }
 
 #celtics {
@@ -122,7 +121,7 @@ section {
 }
 
 #celtics-image {
-    background-image: url("./kyle.png");
+    background-image: url("../images/kyle.png");
 }
 
 #celtics-card {
@@ -151,7 +150,7 @@ section {
 }
 
 #rockets-image {
-    background-image: url("./harden.png");
+    background-image: url("../images/harden.png");
 }
 
 #rockets-card {
@@ -181,7 +180,7 @@ section {
 }
 
 #warriors-image {
-    background-image: url("./curry.png");
+    background-image: url("../images/curry.png");
 }
 
 #warriors-card {
