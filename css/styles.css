@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+/* Overall design */
 * {
     padding: 0;
     margin: 0;
@@ -36,13 +37,6 @@ section {
     overflow: hidden;
 }
 
-#lakers {
-    background-color: #FDB927;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .card {
     width: 50vw;
     height: 100%;
@@ -60,12 +54,6 @@ section {
     width: 60%;
     margin: auto;
     border-radius: 10px;
-}
-
-#lakers-card {
-    background-color: #552583;
-    border: 3px solid #552583;
-    box-shadow: 5px 10px #000000;
 }
 
 .para {
@@ -93,17 +81,6 @@ section {
     border-radius: 10px;
 }
 
-#lakers-btn {
-    border: 2px solid #FDB927;
-    color: #FDB927;
-}
-
-#lakers-btn:hover {
-    background: #FDB927;
-    border: 2px solid #FDB927;
-    color: black;
-}
-
 .image {
     width: 50vw;
     height: 100%;
@@ -112,97 +89,6 @@ section {
     background-position: center;
 }
 
-#lakers-image {
-    background-image: url("../images/kobe.png");
-}
-
-#celtics {
-    background-color: #008348;
-}
-
-#celtics-image {
-    background-image: url("../images/kyle.png");
-}
-
-#celtics-card {
-    background-color: #000000;
-    border: 3px solid #000000;
-    box-shadow: 5px 10px #000000;
-}
-
-#celtics-para {
-    color: #008348;
-}
-
-#celtics-btn {
-    border: 2px solid #008348;
-    color: #008348;
-}
-
-#celtics-btn:hover {
-    background: #008348;
-    border: 2px solid #008348;
-    color: black;
-}
-
-#rockets {
-    background-color: #ce1141;
-}
-
-#rockets-image {
-    background-image: url("../images/harden.png");
-}
-
-#rockets-card {
-    background-color: #000000;
-    border: 3px solid #000000;
-    box-shadow: 5px 10px #000000;
-}
-
-#rockets-para {
-    color: #ce1141;
-}
-
-#rockets-btn {
-    border: 2px solid #ce1141;
-    color: #ce1141;
-}
-
-#rockets-btn:hover {
-    background: #ce1141;
-    border: 2px solid black;
-    color: black;
-}
-
-
-#warriors {
-    background-color: #006bb6;
-}
-
-#warriors-image {
-    background-image: url("../images/curry.png");
-}
-
-#warriors-card {
-    background-color: #fdb927;
-    border: 3px solid #fdb927;
-    box-shadow: 5px 10px #26282a;
-}
-
-#warriors-para {
-    color: #006bb6;
-}
-
-#warriors-btn {
-    border: 2px solid #006bb6;
-    color: #006bb6;
-}
-
-#warriors-btn:hover {
-    background: #006bb6;
-    border: 2px solid #fdb927;
-    color: #fdb927;
-}
 
 
 nav {
@@ -248,6 +134,132 @@ nav .container ul li.active {
 nav .container ul li.active {
     color: white;
 }
+
+/* Lakers design */
+
+#lakers {
+    background-color: #FDB927;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lakers-card {
+    background-color: #552583;
+    border: 3px solid #552583;
+    box-shadow: 5px 10px #000000;
+}
+
+#lakers-btn {
+    border: 2px solid #FDB927;
+    color: #FDB927;
+}
+
+#lakers-btn:hover {
+    background: #FDB927;
+    border: 2px solid #FDB927;
+    color: black;
+}
+
+
+#lakers-image {
+    background-image: url("../images/kobe.png");
+}
+
+/* Celtics design */
+
+#celtics {
+    background-color: #008348;
+}
+
+#celtics-image {
+    background-image: url("../images/kyle.png");
+}
+
+#celtics-card {
+    background-color: #000000;
+    border: 3px solid #000000;
+    box-shadow: 5px 10px #000000;
+}
+
+#celtics-para {
+    color: #008348;
+}
+
+#celtics-btn {
+    border: 2px solid #008348;
+    color: #008348;
+}
+
+#celtics-btn:hover {
+    background: #008348;
+    border: 2px solid #008348;
+    color: black;
+}
+
+/* Rockets design */
+
+#rockets {
+    background-color: #ce1141;
+}
+
+#rockets-image {
+    background-image: url("../images/harden.png");
+}
+
+#rockets-card {
+    background-color: #000000;
+    border: 3px solid #000000;
+    box-shadow: 5px 10px #000000;
+}
+
+#rockets-para {
+    color: #ce1141;
+}
+
+#rockets-btn {
+    border: 2px solid #ce1141;
+    color: #ce1141;
+}
+
+#rockets-btn:hover {
+    background: #ce1141;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Warriors design */
+
+#warriors {
+    background-color: #006bb6;
+}
+
+#warriors-image {
+    background-image: url("../images/curry.png");
+}
+
+#warriors-card {
+    background-color: #fdb927;
+    border: 3px solid #fdb927;
+    box-shadow: 5px 10px #26282a;
+}
+
+#warriors-para {
+    color: #006bb6;
+}
+
+#warriors-btn {
+    border: 2px solid #006bb6;
+    color: #006bb6;
+}
+
+#warriors-btn:hover {
+    background: #006bb6;
+    border: 2px solid #fdb927;
+    color: #fdb927;
+}
+
+/* Media queries */
 
 @media (max-width: 1400px) and (min-width: 640px) {
     

@@ -1,6 +1,9 @@
+// grab sections
 const sections = document.querySelectorAll('section');
 const navli = document.querySelectorAll('nav .container ul li');
 
+
+// handle scroll event
 window.addEventListener('scroll', () => {
     let current = "";
 
@@ -14,8 +17,10 @@ window.addEventListener('scroll', () => {
     });
 
     navli.forEach(li => {
+        // remove the state
         li.classList.remove('active');
 
+        // add active state
         if (li.classList.contains(current)) {
             li.classList.add('active');
         }
