@@ -47,8 +47,8 @@ section {
 
 .inner-card {
     display: grid;
-    grid-template-rows: 80% 20%;
-    grid-template-areas: "para" "buttons";
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: "header" "para" "buttons";
     font-size: 18px;
     height: 70%;
     width: 60%;
@@ -56,14 +56,19 @@ section {
     border-radius: 10px;
 }
 
+.card-header {
+    grid-area: header;
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
 .para {
     grid-area: para;
     margin: 40px;
 }
 
-#lakers-para {
-    color: #FDB927;
-}
 
 .buttons {
     display: flex;
@@ -144,10 +149,19 @@ nav .container ul li.active {
     align-items: center;
 }
 
+#lakers.active {
+    background-color: rgb(23, 64, 139);
+}
+
 #lakers-card {
     background-color: #552583;
     border: 3px solid #552583;
     box-shadow: 5px 10px #000000;
+}
+
+
+#lakers-para {
+    color: #FDB927;
 }
 
 #lakers-btn {
@@ -170,6 +184,10 @@ nav .container ul li.active {
 
 #celtics {
     background-color: #008348;
+}
+
+#celtics.active {
+    background-color: rgb(23, 64, 139);
 }
 
 #celtics-image {
@@ -203,6 +221,10 @@ nav .container ul li.active {
     background-color: #ce1141;
 }
 
+#rockets.active {
+    background-color: rgb(23, 64, 139);
+}
+
 #rockets-image {
     background-image: url("../images/harden.png");
 }
@@ -232,6 +254,10 @@ nav .container ul li.active {
 
 #warriors {
     background-color: #006bb6;
+}
+
+#warriors.active {
+    background-color: rgb(23, 64, 139);
 }
 
 #warriors-image {
