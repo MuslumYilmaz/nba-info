@@ -126,7 +126,6 @@ nav .container ul li a {
     color: black;
     text-decoration: none;
     width: 200px;
-    margin-top: 45px;
     color: white;
 }
 
@@ -316,37 +315,39 @@ nav .container ul li.active {
         font-size: 14px;
     }
 
+    .logo {
+        display: none;
+    }
+
+        nav .container ul li a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        width: 100px;
+        color: white;
+    }
+
     .card {
-        width: 800px;
-        height: 700px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 90%;
+    }
+
+    .inner-card {
+        width: 100vw;
+        height: 80%;
     }
 
     .image {
         display: none;
     }
 
-    .lakers{
-        display: none !important;
-    }
-
-    .celtics{
-        display: none !important;
-
-    }
-
-    .rockets{
-        display: none !important;
-    }
-
-    .warriors{
-        display: none !important;
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
     }
 
     nav .container ul li {
-        width: 100%;
+        width: fit-content;
     }
 
     nav .container {
