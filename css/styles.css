@@ -129,6 +129,10 @@ nav .container ul li a {
     color: white;
 }
 
+a.active {
+    background-color: rgb(23, 64, 139);
+}
+
 nav .container ul li.active {
     display: inline-block;
     background-color: rgb(23, 64, 139);
