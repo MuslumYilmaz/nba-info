@@ -12,7 +12,7 @@ function addHeaderList() {
     const navList = ['Home', 'Lakers', 'Celtics', 'Rockets', 'Warriors'];
 
     for (i of navList) {
-        let newHeaderItem = document.createElement('a');
+        let newHeaderItem = document.createElement('li');
         newHeaderItem.textContent = i;
         newHeaderItem.setAttribute("data-link", i);
         newHeaderItem.classList.add("scroll-to");
