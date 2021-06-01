@@ -33,7 +33,7 @@ section {
     font-size: 50px;
 }
 
-#home {
+#Home {
     overflow: hidden;
 }
 
@@ -52,7 +52,6 @@ section {
     font-size: 18px;
     height: 70%;
     width: 60%;
-    margin: auto;
     border-radius: 10px;
 }
 
@@ -115,11 +114,11 @@ nav .container ul {
     list-style: none;
 }
 
-nav .container ul li {
+nav .container div {
     display: inline-block;
 }
 
-nav .container ul li a {
+nav .container div a {
     height: 60px;
     display: inline-block;
     padding: 10px 20px;
@@ -133,26 +132,26 @@ a.active {
     background-color: rgb(23, 64, 139);
 }
 
-nav .container ul li.active {
+nav .container div a.active {
     display: inline-block;
     background-color: rgb(23, 64, 139);
     transition: 0.3s ease background-color;
 }
 
-nav .container ul li.active {
+nav .container div.active {
     color: white;
 }
 
 /* Lakers design */
 
-#lakers {
+#Lakers {
     background-color: #FDB927;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#lakers.active {
+#Lakers.active {
     background-color: rgb(23, 64, 139);
 }
 
@@ -185,11 +184,11 @@ nav .container ul li.active {
 
 /* Celtics design */
 
-#celtics {
+#Celtics {
     background-color: #008348;
 }
 
-#celtics.active {
+#Celtics.active {
     background-color: rgb(23, 64, 139);
 }
 
@@ -220,11 +219,11 @@ nav .container ul li.active {
 
 /* Rockets design */
 
-#rockets {
+#Rockets {
     background-color: #ce1141;
 }
 
-#rockets.active {
+#Rockets.active {
     background-color: rgb(23, 64, 139);
 }
 
@@ -255,11 +254,11 @@ nav .container ul li.active {
 
 /* Warriors design */
 
-#warriors {
+#Warriors {
     background-color: #006bb6;
 }
 
-#warriors.active {
+#Warriors.active {
     background-color: rgb(23, 64, 139);
 }
 
@@ -296,7 +295,7 @@ nav .container ul li.active {
         font-size: 14px;
     }
 
-    nav .container ul li a {
+    nav .container div a {
         display: inline-block;
         color: black;
         text-decoration: none;
@@ -323,7 +322,7 @@ nav .container ul li.active {
         display: none;
     }
 
-        nav .container ul li a {
+    nav .container div a {
         display: inline-block;
         color: black;
         text-decoration: none;
@@ -333,10 +332,11 @@ nav .container ul li.active {
 
     .card {
         width: 90%;
+        margin: 0;
     }
 
     .inner-card {
-        width: 100vw;
+        width: 80vw;
         height: 80%;
     }
 
@@ -350,7 +350,7 @@ nav .container ul li.active {
         font-size: 12px;
     }
 
-    nav .container ul li {
+    nav .container div {
         width: fit-content;
     }
 
