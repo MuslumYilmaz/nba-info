@@ -22,12 +22,10 @@ function addHeaderList() {
     }
 }
 
-// add scrolling functionality
+// add click functionality
 function addScrolling() {
     links.forEach(item => {
         item.addEventListener('click', () => {
-            removeActiveState();
-            item.classList.add("active");
             const el = document.getElementById(item.getAttribute("data-link"));
             el.scrollIntoView({
                 behavior: "smooth",
@@ -41,3 +39,29 @@ function addScrolling() {
 function removeActiveState() {
     links.forEach(l => l.classList.remove("active"));
 }
+
+// add scrolling function
+
+const sections = document.querySelectorAll('section');
+const navli = document.querySelectorAll('nav .container ul li');
+
+window.addEventListener('scroll', () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navli.forEach(li => {
+        li.classList.remove('active');
+
+        if (li.classList.contains(current)) {
+            li.classList.add('active');
+        }
+    });
+}); 
